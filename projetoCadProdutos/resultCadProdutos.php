@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>finalizado</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon/logo_carro.ico" type="image/x-icon">
 </head>
 <body>
 <header>
@@ -47,7 +48,11 @@ if (!empty($_POST["idenproduto"]) && !empty($_POST["nomepro"]) && !empty($_POST[
          
        
         ?>
-        <p><a href="index.php">Voltar para a pagina de logim</a></p>
+        
+        <form action="cadProdutos.php" method= "post">
+            <input type="submit" value="Voltar">
+        </form>
+    
     </main>
 </body>
 </html>
