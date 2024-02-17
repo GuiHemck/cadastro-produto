@@ -20,7 +20,8 @@
             <input type="text" name="nomepro" id="idnome">
 
             <label for="idvalor">Valor:</label>
-            <input type="number" name="preco" id="idvalor">
+            <input type="text" name="preco" id="idvalor">
+            
 
             <form action="resultCadProdutos.php" method="post">
 

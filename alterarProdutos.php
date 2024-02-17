@@ -17,7 +17,7 @@
             <label for="mudnome">Nome do produto</label>
             <input type="text" name="mudarnome" id="mudnome">
             <label for="mudvalor">valor do produto</label>
-            <input type="number" name="mudarvalor" id="mudvalor">
+            <input type="text" name="mudarvalor" id="mudvalor">
             <input type="submit" value="Alterar">
             
         </form>
