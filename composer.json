@@ -1,0 +1,20 @@
+{
+    "name": "cadastro/produto",
+    "description": "projeto cadastro",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Cadastro\\Produto\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "guihemck",
+            "email": "146779002+GuiHemck@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "picqer/php-barcode-generator": "dev-main"
+    }
+}

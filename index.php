@@ -28,7 +28,7 @@ try {
     $conn = new PDO("mysql:host=localhost;dbname=controle_estoque", "root", "");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    // Verificando se a chave 'produto' está definida no array $_GET antes de acessá-la
+    // Verificando se a chave produto está definida no array antes de acessá-la
     $id_produto = isset($_POST['produto']) ? $_POST['produto'] : null;
 
     if ($id_produto !== null) {
@@ -40,6 +40,9 @@ try {
         if ($stmt->rowCount() > 0) {
             while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                 echo "ID: " . $row["id"]. " - Nome: " . $row["nome"]. " - Valor: " . $row["valor"]. "<br>";
+                include "vendor/autoload.php";
+                        $generator = new Picqer\Barcode\BarcodeGeneratorHTML();
+                        echo $generator->getBarcode($row["valor"], $generator::TYPE_CODE_128);
             }
          }else{
             echo "<p>Nenhum produto encontrado.</p>";
@@ -49,11 +52,10 @@ try {
     echo "Erro de conexão: " . $e->getMessage();
 }
 
-
         
-        // Fechando a conexão
         $conn = null;
 }
+
         
         ?>
     
