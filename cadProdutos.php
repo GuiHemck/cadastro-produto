@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="favicon/logo_carro.ico" type="image/x-icon">
 </head>
 <body>
@@ -31,7 +31,7 @@
         </form>
     </section>
     <main>
-        <form action="index.php" method= "post">
+        <form action="consultaestoque.php" method= "post">
             <input type="submit" value="Voltar">
         </form>
     </main>

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alteração</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon/logo_carro.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
 </head>
 <body>
     <h1>Selecione o Produto</h1>
