@@ -31,7 +31,7 @@
         </form>
     </section>
     <main>
-        <form action="consultaestoque.php" method= "post">
+        <form action="logado.php" method= "post">
             <input type="submit" value="Voltar">
         </form>
     </main>

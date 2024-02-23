@@ -1,7 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verificação</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
 <?php 
      //print_r($_REQUEST);
     
-     include_once('config.php');
+     include_once 'config.php';
 
      if (isset($_GET['nomee'])|| isset ($_GET['sobrenomee'])) 
      {
@@ -40,44 +50,9 @@
         }else{
             echo "<main>Usuário não cadastrado. Realize o cadastro <a href='cadastroclientes.php'>aqui</a>.</main>";
         }
-
-
      }
-
-    
-    }
-
-    
+    }    
     ?>
-
-
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste</title>
-    <style>
-        body{
-            background-image: linear-gradient(to bottom, white, black);
-        }
-        main{
-            width: 200px;
-            height: 50px;
-            background-color: blue;
-            margin: auto;
-            border-radius: 5px;
-            padding: 10px;
-            color: aliceblue;
-            
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bolder;
-        }
-    </style>
-   
-</head>
-<body>
 
     
 </body>

@@ -18,7 +18,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['produto'])) {
     
             if ($stmt->rowCount() > 0) {
                 while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                    include "vendor/autoload.php";
 
                     $generator = new Picqer\Barcode\BarcodeGeneratorHTML();
                     echo $generator->getBarcode('$row',

@@ -52,7 +52,7 @@ a.externo::after{
 
 
 header {
-   
+   float: right;
     position: fixed;
     height: 120px;
 
@@ -60,6 +60,30 @@ header {
     background-image:linear-gradient(to bottom, var(--cor3), var(--cor5));    color: #fff;
 
 }
+img#telefone{
+    
+/*     position:absolute;
+ */    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    height: 627px;
+    width: 311px;
+    background: url(../imagens/frame-iphone2.png) ;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+
+}
+
+iframe#tela{
+    position: relative;
+    top: -482.6px;
+    left: 403px;
+    width: 193px;
+    height: 340px;
+    display: flex;
+}
+
 .container {
    
     max-width: 1200px;

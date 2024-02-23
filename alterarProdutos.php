@@ -24,6 +24,9 @@
         
     </section>
     <?php
+
+    
+
     if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['idprod']) && isset($_POST['mudarnome']) && isset( $_POST['mudarvalor'])) {
         // ID do produto a ser atualizado
         $id_produto = $_POST['idprod'];
@@ -31,6 +34,7 @@
         // Novos dados para o produto
         $novo_nome = $_POST['mudarnome'];
         $novo_valor = $_POST['mudarvalor'];
+        
 
         try {
             // Conexão com o banco de dados usando PDO
@@ -62,11 +66,10 @@
         $conn = null;
     }
     ?>
-    <section>
-        <a href="index.php">voltar</a>
-    </section>
-    
-
-    
+  <main>
+        <form action="logado.php" method= "post">
+            <input type="submit" value="Voltar">
+        </form>
+    </main>
 </body>
 </html>

@@ -24,19 +24,15 @@
         </main>
        
     
-    <form action="cadProdutos.php" method="post">
-       
-        <input type="submit" value="Cadastrar Produtos">
-    </form>
-    <form action="alterarProdutos.php" method="post">
+    <main>
+        <form action="logado.php" method= "post">
+            <input type="submit" value="Voltar">
+        </form>
+    </main>
+    <!-- <form action="alterarProdutos.php" method="post">
        
         <input type="submit" value="Alterar Produtos">
-    </form>
-    
-    
-
-    
-
+    </form> -->
     
 </body>
 </html>

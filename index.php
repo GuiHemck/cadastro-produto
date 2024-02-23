@@ -18,7 +18,7 @@
                 <ul>
                     <li><a href="#">Página Inicial</a></li>
                     <li><a href="#funcionalidades">Funcionalidades</a></li>
-                    <li><a href="categorias.html">Categorias</a></li>
+                    <li><a href="#">Categorias</a></li>
                     <li><a href="acesso.php">Acessar</a></li>
                 </ul>
             </nav>
@@ -106,24 +106,6 @@
         <h3>Além do sistema de controle de estoque, todos os planos InventárioWEB incluem</h3>
         <p>Nós nos orgulhamos das funcionalidades do nosso site. Com uma navegação fácil e acesso rápido a diversas ferramentas, tornamos a experiência do usuário simples e eficiente. Estamos comprometidos em oferecer um ambiente online prático e útil para todos os nossos visitantes.</p>
         <div class="container">
-        <div class="item">
-            <img src="imagens/logo-github.jpg" alt="Imagem 1" class="imagem-func">
-            <p>Monitoramento do volume de mercadorias</p>
-        </div>
-        <div class="item">
-            <img src="imagens/logo-github.jpg" alt="Imagem 2" class="imagem-func">
-            <p>Gestão do fluxo de produtos</p>
-        </div>
-        <div class="item">
-            <img src="imagens/logo-github.jpg" alt="Imagem 3" class="imagem-func">
-            <p>Geração de código de barras</p>
-        </div>
-        <div class="item">
-            <img src="imagens/logo-github.jpg" alt="Imagem 4" class="imagem-func">
-            <p>Relatórios de vendas por produto</p>
-        </div>
-    </div>
-    <div class="container">
         <div class="item">
             <img src="imagens/logo-github.jpg" alt="Imagem 1" class="imagem-func">
             <p>Monitoramento do volume de mercadorias</p>

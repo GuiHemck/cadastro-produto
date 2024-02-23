@@ -43,9 +43,12 @@ echo "Erro de conexão: " . $e->getMessage();
  $conn = null;
 }
 
- 
-
 ?>
+ <main>
+        <form action="consultaestoque.php" method= "post">
+            <input type="submit" value="Voltar">
+        </form>
+    </main>
 
 </body>
 </html>
