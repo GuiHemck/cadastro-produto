@@ -21,7 +21,7 @@ if (!empty($_POST["idenproduto"]) && !empty($_POST["nomepro"]) && !empty($_POST[
 
     $conn = new PDO("mysql:host=localhost;dbname=controle_estoque", "root", "");
 
-    // Verificar se o perfil já está cadastrado
+    // Verificar se o produto já foi está cadastrado
     $stmtVerificar = $conn->prepare("SELECT * FROM produtos WHERE id = :idproduto AND nome = :nomepro AND valor = :preco");
     $stmtVerificar->bindParam(":idproduto", $idproduto);
     $stmtVerificar->bindParam(":nomepro", $nomepro);
@@ -33,7 +33,6 @@ if (!empty($_POST["idenproduto"]) && !empty($_POST["nomepro"]) && !empty($_POST[
     if ($qtdRegistros > 0) {
         echo "Erro: Este produto já está cadastrado.";
     } else {
-        // Se não existir, realizar o cadastro
         $stmtCadastro = $conn->prepare("INSERT INTO produtos (id, nome, valor) VALUES (:idproduto, :nomepro, :valor)");
         $stmtCadastro->bindParam(":idproduto", $idproduto);
         $stmtCadastro->bindParam(":nomepro", $nomepro);

@@ -15,7 +15,7 @@ try {
 $conn = new PDO("mysql:host=localhost;dbname=controle_estoque", "root", "");
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-// Verificando se a chave produto está definida no array antes de acessá-la
+// Verificando se nao é um array vazio
 $id_produto = isset($_POST['produto']) ? $_POST['produto'] : null;
 
 if ($id_produto !== null) {

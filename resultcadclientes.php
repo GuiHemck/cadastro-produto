@@ -22,7 +22,7 @@ if (!empty($_GET["nome"]) && !empty($_GET["sobrenome"]) && !empty($_GET["Login"]
 
     $conn = new PDO("mysql:host=localhost;dbname=dbphp7", "root", "");
 
-    // Verificar se o perfil já está cadastrado
+    // Verificar se o cliente já está cadastrado
     $stmtVerificar = $conn->prepare("SELECT * FROM cad_usuarios WHERE nome = :nome AND sobrenome = :sobrenome AND logim = :logim AND email = :email");
     $stmtVerificar->bindParam(":nome", $nome);
     $stmtVerificar->bindParam(":sobrenome", $sobrenome);
@@ -35,7 +35,7 @@ if (!empty($_GET["nome"]) && !empty($_GET["sobrenome"]) && !empty($_GET["Login"]
     if ($qtdRegistros > 0) {
         echo "Erro: Este perfil já está cadastrado.";
     } else {
-        // Se não existir, realizar o cadastro
+        // Se não for cadastrado realizar o cadastro
         $stmtCadastro = $conn->prepare("INSERT INTO cad_usuarios (nome, sobrenome, logim, email) VALUES (:nome, :sobrenome, :logim, :email)");
         $stmtCadastro->bindParam(":nome", $nome);
         $stmtCadastro->bindParam(":sobrenome", $sobrenome);

@@ -29,10 +29,7 @@
             <input type="submit" value="Voltar">
         </form>
     </main>
-    <!-- <form action="alterarProdutos.php" method="post">
-       
-        <input type="submit" value="Alterar Produtos">
-    </form> -->
+    
     
 </body>
 </html>
